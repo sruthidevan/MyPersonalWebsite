@@ -1,48 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>My Personal Website</title>
-    <link rel="stylesheet" href="styles.css">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>My Personal Website</h1>
-    </header>
+  <!-- Button to show/hide content -->
+  <button id="toggleButton">Show/Hide Content</button>
+  <div id="toggleContent" class="hidden">
+    This content is hidden by default.
+  </div>
 
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+  <!-- Form with validation -->
+  <form id="myForm">
+    <label for="password">Password: </label>
+    <input type="password" id="password" name="password">
+    <span id="passwordError" class="error hidden">Password must be at least 8 characters.</span><br>
+    <input type="submit" value="Submit">
+  </form>
 
-    <section id="home">
-        <h2>Home</h2>
-        <p>Welcome to my personal website!</p>
-    </section>
+  <!-- Section to load content dynamically -->
+  <button id="loadContent">Load Content</button>
+  <div id="dynamicContent">
+    <!-- Content will be loaded here -->
+  </div>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Information about me.</p>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <p>My skills include...</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email me at example@example.com</p>
-    </section>
-
-    <footer>
-        <p>© 2023 by My Name</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <!-- Fun hidden feature: Konami Code -->
+  <div id="konami" class="hidden">
+    You've unlocked a hidden feature!
+  </div>
+  
+  <script src="scripts.js"></script>
 </body>
 </html>
